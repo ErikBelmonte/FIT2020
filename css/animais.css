@@ -125,9 +125,6 @@ body {
 }
 
 @media screen and (max-width:600px){
-    .states{
-        align-items: center;
-    }
     .RS{
         flex-direction: column;
     }

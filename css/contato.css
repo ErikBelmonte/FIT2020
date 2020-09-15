@@ -7,7 +7,7 @@ body {
     height: 100%;
 }
 
-/* Cabeçalho */
+/* CABEÇALHO */
 
 .main-header{
     display: flex;
@@ -64,108 +64,109 @@ body {
     }
 }
 
-/* IMAGEM DOS ESTADOS */
+/* FORMULÁRIO */
 
-.states{
-    margin-left: 150px;
+.wrapper{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 100%;
 }
 
-.title-states h1{
-    margin-top: 100px;
+.contact-form{
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgb(31, 30, 29);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-fields, .msg{
+    width: 48%;
+}
+
+.input-fields .input, .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #16337e;
+    padding: 10px;
+    color: #16337e;
+    width: 100%;
+}
+
+.msg textarea{
+    height: 212px;
+}
+
+::-webkit-input-placeholder{
+    color: #16337e;
+}
+
+::-moz-input-placeholder{
+    color: #16337e;
+}
+
+::-ms-input-placeholder{
+    color: #16337e;
+}
+
+.btn{
+    background: #16337e;
     text-align: center;
-    font-size: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
-.RS{
-    display: inline-block;
-    margin: 50px 50px 50px 50px;
-    text-align: center;
+@media screen and (max-width:1119px){
+    .wrapper{
+        top: 40%;
+    }
+    .contact-form{
+        flex-direction: column;
+    }
+    .msg textarea{
+        height: 80px;
+    }
+    .input-fields, .msg{
+        width: 100%;
+    }
 }
 
-.RS h2{
-    margin-top: 10px;
-    align-items: column;
-    font-size: 20px;
-}
-
-.SC{
-    display: inline-block;
-    margin: 50px 50px 50px 50px;
-    text-align: center;
-}
-
-.SC h2{
-    margin-top: 10px;
-    align-items: column;
-    font-size: 20px;
-}
-
-.PR{
-    display: inline-block;
-    margin: 50px 50px 50px 50px;
-    text-align: center;
-}
-
-.PR h2{
-    margin-top: 10px;
-    align-items: column;
-    font-size: 20px;
-}
-
-.SP{
-    display: inline-block;
-    margin: 50px 50px 50px 50px;
-    text-align: center;
-}
-
-.SP h2{
-    margin-top: 10px;
-    align-items: column;
-    font-size: 20px;
+@media screen and (max-width:767px){
+    .wrapper{
+        top: 50%;
+    }
+    .contact-form{
+        flex-direction: column;
+    }
+    .msg textarea{
+        height: 80px;
+    }
+    .input-fields, .msg{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:600px){
-    .states{
-        align-items: center;
-    }
-    .RS{
+    .contact-form{
         flex-direction: column;
     }
-    
-    .RS h2{
-        margin-top: 10px;
-        align-items: column;
-        font-size: 20px;
+    .msg textarea{
+        height: 80px;
     }
-    
-    .SC{
-        flex-direction: column;
-    }
-    
-    .SC h2{
-        margin-top: 10px;
-        align-items: column;
-        font-size: 20px;
-    }
-    
-    .PR{
-        flex-direction: column;
-    }
-    
-    .PR h2{
-        margin-top: 10px;
-        align-items: column;
-        font-size: 20px;
-    }
-    
-    .SP{
-        flex-direction: column;
-    }
-    
-    .SP h2{
-        margin-top: 10px;
-        align-items: column;
-        font-size: 20px;
+    .input-fields, .msg{
+        width: 100%;
     }
 }
 
@@ -176,7 +177,7 @@ footer{
     background-color: rgb(31, 30, 29);
     padding: 50px 0;
     align-items: center;
-    margin-top: 421px;
+    margin-top: 653px;
 }
 
 .contact h2{
