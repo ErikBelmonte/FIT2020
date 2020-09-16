@@ -125,74 +125,20 @@ body {
 }
 
 @media screen and (max-width:600px){
-    .states{
-        align-items: center;
-    }
-    .RS{
-        flex-direction: column;
-    }
     
-    .RS h2{
-        margin-top: 10px;
-        align-items: column;
-        font-size: 20px;
-    }
-    
-    .SC{
-        flex-direction: column;
-    }
-    
-    .SC h2{
-        margin-top: 10px;
-        align-items: column;
-        font-size: 20px;
-    }
-    
-    .PR{
-        flex-direction: column;
-    }
-    
-    .PR h2{
-        margin-top: 10px;
-        align-items: column;
-        font-size: 20px;
-    }
-    
-    .SP{
-        flex-direction: column;
-    }
-    
-    .SP h2{
-        margin-top: 10px;
-        align-items: column;
-        font-size: 20px;
-    }
 }
 
 /* FOOTER */
 
 footer{
+    position: absolute;
+    margin-top: 140px;
+    width: 100%;
     border-top: 1px solid rgb(0, 0, 0);
     background-color: rgb(31, 30, 29);
     padding: 50px 0;
     align-items: center;
-    margin-top: 421px;
 }
-
-.contact h2{
-    margin-bottom: 10px;
-    margin-left: 50px;
-    text-align: left;
-    font-size: 20px;
-    color: #16337e;
-}
-
-.contact h4{
-    margin-left: 30px;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
 .links-footer{
     display: flex;
     flex-direction: column;
